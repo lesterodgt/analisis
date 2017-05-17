@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<project name="BankAccount" basedir="." default="test">
+  <target name="test">
+    <phpunit haltonfailure="true" printsummary="true">
+      <batchtest>
+        <fileset dir=".">
+          <include name="*test.php"/>
+        </fileset>
+      </batchtest>
+    </phpunit>
+  </target>
+</project>
